@@ -1,0 +1,375 @@
+{% load staticfiles %}
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<!-- Mirrored from www.scaledagiletrainings.com/courses.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Mar 2020 18:54:51 GMT -->
+<head>
+
+	<!-- META ============================================= -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+	<meta name="robots" content="" />
+	
+	<!-- DESCRIPTION -->
+	<meta name="description" content="SCALED AGILE TRAININGS" />
+	
+	<!-- OG -->
+	<meta property="og:title" content="SCALED AGILE TRAININGS" />
+	<meta property="og:description" content="SCALED AGILE TRAININGS" />
+	<meta property="og:image" content="" />
+	<meta name="format-detection" content="telephone=no">
+	
+	<!-- FAVICONS ICON ============================================= -->
+	<link rel="icon" href="{% static 'assets/images/favicon.ico' %}" type="image/x-icon" />
+	<link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/images/favicon.png' %}" />
+	
+	<!-- PAGE TITLE HERE ============================================= -->
+	<title>SCALED AGILE TRAININGS </title>
+	
+	<!-- MOBILE SPECIFIC ============================================= -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!--[if lt IE 9]>
+	<script src="assets/js/html5shiv.min.js"></script>
+	<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
+	
+	<!-- All PLUGINS CSS ============================================= -->
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/css/assets.css' %}">
+	
+	<!-- TYPOGRAPHY ============================================= -->
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/css/typography.css' %}">
+	
+	<!-- SHORTCODES ============================================= -->
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/css/shortcodes/shortcodes.css' %}">
+	
+	<!-- STYLESHEETS ============================================= -->
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/css/style.css' %}">
+	<link class="skin" rel="stylesheet" type="text/css" href="{% static 'assets/css/color/color-1.css' %}">
+	
+</head>
+<body id="bg">
+<div class="page-wraper">
+<div id="loading-icon-bx"></div>
+
+	<!-- Header Top ==== -->
+	<div w3-include-html="header.html"></div>
+	<!-- Header End ==== -->
+    <!-- Content -->
+    <div class="page-content bg-white">
+        <!-- inner page banner -->
+        <div class="page-banner ovbl-dark" style="background-image:url({% static 'assets/images/banner/banner3.jpg' %});">
+            <div class="container">
+                <div class="page-banner-entry">
+                    <h1 class="text-white">Our Courses</h1>
+				 </div>
+            </div>
+        </div>
+		<!-- Breadcrumb row -->
+		<div class="breadcrumb-row">
+			<div class="container">
+				<ul class="list-inline">
+					<li><a href="{% url 'training:index' %}">Home</a></li>
+					<li>Our Courses</li>
+				</ul>
+			</div>
+		</div>
+		<!-- Breadcrumb row END -->
+        <!-- inner page banner END -->
+		<div class="content-block">
+            <!-- About Us -->
+			<div class="section-area section-sp1">
+                <div class="container">
+					 <div class="row">
+						<div class="col-lg-3 col-md-4 col-sm-12 m-b30">
+							<div class="widget courses-search-bx placeani">
+								<div class="form-group">
+									<div class="input-group">
+										<label>Search Courses</label>
+										<input name="dzName" type="text" required class="form-control">
+									</div>
+								</div>
+							</div>
+							<div class="widget widget_archive">
+                                <h5 class="widget-title style-1">All Courses</h5>
+                                <ul>
+                                    <li class="active"><a href="{% url 'training:leadingSAFe' %}">Technology</a></li>
+                                    <li><a href="{% url 'training:SAFePOPM' %}'">Business</a></li>
+									<li><a href="{% url 'training:SP' %}">Agile Teams</a></li>
+									<li><a href="{% url 'training:SAFeDevOps' %}">Operations</a></li>
+                                   <!-- <li><a href="#">Programming Language</a></li>
+                                    <li><a href="#">Technology</a></li>-->
+                                </ul>
+                            </div>
+							<div class="widget">
+								<!--<a href="#"><img src="assets/images/adv/adv.jpg" alt=""/></a>-->
+							</div>
+							<div class="widget recent-posts-entry widget-courses">
+                                <h5 class="widget-title style-1">Recent Courses</h5>
+                                <div class="widget-post-bx">
+                                    <div class="widget-post clearfix">
+                                        <div class="ttr-post-media"> <img src="{% static 'assets/images/SAFePageImages/SAFe5SA.png' %}" width="200" height="143" alt=""> </div>
+                                        <div class="ttr-post-info">
+                                            <div class="ttr-post-header">
+                                                <h6 class="post-title"><a href="{% url 'training:leadingSAFe' %}">Leading SAFe - SAFe Agilist</a></h6>
+                                            </div>
+                                            <div class="ttr-post-meta">
+                                                <ul>
+                                                    <li class="price">
+														<del>INR 55000</del>
+														<h5>INR 50000</h5>
+													</li>
+                                                    <li class="review">03 Review</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="widget-post clearfix">
+                                        <div class="ttr-post-media"> <img src="{% static 'assets/images/SAFePageImages/SAFe5POPM.png' %}" width="200" height="160" alt=""> </div>
+                                        <div class="ttr-post-info">
+                                            <div class="ttr-post-header">
+                                                <h6 class="post-title"><a href="{% url 'training:SAFePOPM' %}">SAFe Product Owner Product Managment</a></h6>
+                                            </div>
+                                            <div class="ttr-post-meta">
+                                                <ul>
+                                                    <li class="price">
+														<del>INR 55000</del>
+														<h5>INR 50000</h5>
+													</li>
+                                                    <li class="review">07 Review</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+						</div>
+						<div class="col-lg-9 col-md-8 col-sm-12">
+							<div class="row">
+								<div class="col-md-6 col-lg-4 col-sm-6 m-b30">
+									<div class="cours-bx">
+										<div class="action-box">
+											<img src="{% static 'assets/images/SAFePageImages/SAFe5SA.png' %}" alt="">
+											<a href="{% url 'training:SP' %}" class="btn">Read More</a>
+										</div>
+										<div class="info-bx text-center">
+											<h5><a href="{% url 'training:leadingSAFe %}">SAFe Practitioner 4.6</a></h5>
+											<span>SAFe for Teams</span>
+										</div>
+										<div class="cours-more-info">
+											<div class="review">
+												<span> Most Selling Course</span>
+												<ul class="cours-star">
+													<li class="active"><i class="fa fa-star"></i></li>
+													<li class="active"><i class="fa fa-star"></i></li>
+													<li class="active"><i class="fa fa-star"></i></li>
+													<li class="active"><i class="fa fa-star"></i></li>
+													<li class="active"><i class="fa fa-star"></i></li>
+													<!--<li><i class="fa fa-star"></i></li>
+													<li><i class="fa fa-star"></i></li>-->
+												</ul>
+											</div>
+											<div class="price">
+												<del>INR 55000</del>
+												<h5>INR 50000</h5>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-lg-4 col-sm-6 m-b30">
+									<div class="cours-bx">
+										<div class="action-box">
+											<img src="{% static 'assets/images/SAFePageImages/SAFe5SSM.png' %}" alt="">
+											<a href="{% url 'training:SAFeSSM' %}" class="btn">Read More</a>
+										</div>
+										<div class="info-bx text-center">
+											<h5><a href="{% url 'training:SAFeSSM' %}">SAFe Scrum Master</a></h5>
+											<span>SAFe SM</span>
+										</div>
+										<div class="cours-more-info">
+											<div class="review">
+												<span>Ranking</span>
+												<ul class="cours-star">
+													<li class="active"><i class="fa fa-star"></i></li>
+													<li class="active"><i class="fa fa-star"></i></li>
+													<li class="active"><i class="fa fa-star"></i></li>
+													<li class="active"><i class="fa fa-star"></i></li>
+													<!--<li><i class="fa fa-star"></i></li>-->
+													<li><i class="fa fa-star"></i></li>
+												</ul>
+											</div>
+											<div class="price">
+												<del>INR 55000</del>
+												<h5>INR 50000</h5>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-lg-4 col-sm-6 m-b30">
+									<div class="cours-bx">
+										<div class="action-box">
+											<img src="{% static 'assets/images/SAFePageImages/SAFe5POPM.png' %}" alt="">
+											<a href="{% url 'training:SAFePOPM' %}" class="btn">Read More</a>
+										</div>
+										<div class="info-bx text-center">
+											<h5><a href="{% url 'training:SAFePOPM' %}">SAFe Product Owner Product Management</a></h5>
+											<span>SAFe POPM</span>
+										</div>
+										<div class="cours-more-info">
+											<div class="review">
+												<span>3 Review</span>
+												<ul class="cours-star">
+													<li class="active"><i class="fa fa-star"></i></li>
+													<li class="active"><i class="fa fa-star"></i></li>
+													<li class="active"><i class="fa fa-star"></i></li>
+													<li><i class="fa fa-star"></i></li>
+													<li><i class="fa fa-star"></i></li>
+												</ul>
+											</div>
+											<div class="price">
+												<del>INR 55000</del>
+												<h5>INR 50000</h5>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-lg-4 col-sm-6 m-b30">
+									<div class="cours-bx">
+										<div class="action-box">
+											<img src="{% static 'assets/images/SAFePageImages/SAFe5SA.png' %}" alt="">
+											<a href="{% url 'training:leadingSAFe' %}" class="btn">Read More</a>
+										</div>
+										<div class="info-bx text-center">
+											<h5><a href="{% url 'training:leadingSAFe' %}">Leading SAFe</a></h5>
+											<span>SAFe Agilist</span>
+										</div>
+										<div class="cours-more-info">
+											<div class="review">
+												<span>3 Review</span>
+												<ul class="cours-star">
+													<li class="active"><i class="fa fa-star"></i></li>
+													<li class="active"><i class="fa fa-star"></i></li>
+													<li class="active"><i class="fa fa-star"></i></li>
+													<li><i class="fa fa-star"></i></li>
+													<li><i class="fa fa-star"></i></li>
+												</ul>
+											</div>
+											<div class="price">
+												<del>INR 55000</del>
+												<h5>INR 50000</h5>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-lg-4 col-sm-6 m-b30">
+									<div class="cours-bx">
+										<div class="action-box">
+											<img src="{% static 'assets/images/SAFePageImages/SAFe5SASM.png' %}" alt="">
+											<a href="{% url 'training:SAFeSSM' %}" class="btn">Read More</a>
+										</div>
+										<div class="info-bx text-center">
+											<h5><a href="{% url 'training:SAFeSSM' %}">SAFe Advanced Scrum Master</a></h5>
+											<span>SAFe ASSM</span>
+										</div>
+										<div class="cours-more-info">
+											<div class="review">
+												<span>3 Review</span>
+												<ul class="cours-star">
+													<li class="active"><i class="fa fa-star"></i></li>
+													<li class="active"><i class="fa fa-star"></i></li>
+													<li class="active"><i class="fa fa-star"></i></li>
+													<li><i class="fa fa-star"></i></li>
+													<li><i class="fa fa-star"></i></li>
+												</ul>
+											</div>
+											<div class="price">
+												<del>INR 55000</del>
+												<h5>INR 50000</h5>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-lg-4 col-sm-6 m-b30">
+									<div class="cours-bx">
+										<div class="action-box">
+											<img src="{% static 'assets/images/SAFePageImages/SAFe5SDP.png' %}" alt="">
+											<a href="{% url 'training:leadingSAFe' %}" class="btn">Read More</a>
+										</div>
+										<div class="info-bx text-center">
+											<h5><a href="{% url 'training:leadingSAFe' %}">SAFe for DevOps</a></h5>
+											<span>DevOps</span>
+										</div>
+										<div class="cours-more-info">
+											<div class="review">
+												<span>3 Review</span>
+												<ul class="cours-star">
+													<li class="active"><i class="fa fa-star"></i></li>
+													<li class="active"><i class="fa fa-star"></i></li>
+													<li class="active"><i class="fa fa-star"></i></li>
+													<li><i class="fa fa-star"></i></li>
+													<li><i class="fa fa-star"></i></li>
+												</ul>
+											</div>
+											<div class="price">
+												<del>INR 55000</del>
+												<h5>INR 50000</h5>
+											</div>
+										</div>
+									</div>
+								</div>
+									<!--<div class="col-lg-12 m-b20">
+									<div class="pagination-bx rounded-sm gray clearfix">
+										<ul class="pagination">
+											<li class="previous"><a href="#"><i class="ti-arrow-left"></i> Prev</a></li>
+											<li class="active"><a href="#">1</a></li>
+											<li><a href="#">2</a></li>
+											<li><a href="#">3</a></li>
+											<li class="next"><a href="#">Next <i class="ti-arrow-right"></i></a></li>
+										</ul>
+									</div>-->
+								</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+        </div>
+		<!-- contact area END -->
+		
+    </div>
+    <!-- Content END-->
+	<!-- Footer ==== -->
+	<div w3-include-html="footer.html"></div>
+	<!-- Footer END ==== -->
+    <button class="back-to-top fa fa-chevron-up" ></button>
+</div>
+<!-- External JavaScripts -->
+<script src="{% static 'assets/js/jquery.min.js' %}"></script>
+<script src="{% static 'assets/vendors/bootstrap/js/popper.min.js' %}"></script>
+<script src="{% static 'assets/vendors/bootstrap/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'assets/vendors/bootstrap-select/bootstrap-select.min.js' %}"></script>
+<script src="{% static 'assets/vendors/bootstrap-touchspin/jquery.bootstrap-touchspin.js' %}"></script>
+<script src="{% static 'assets/vendors/magnific-popup/magnific-popup.js' %}"></script>
+<script src="{% static 'assets/vendors/counter/waypoints-min.js' %}"></script>
+<script src="{% static 'assets/vendors/counter/counterup.min.js' %}"></script>
+<script src="{% static 'assets/vendors/imagesloaded/imagesloaded.js' %}"></script>
+<script src="{% static 'assets/vendors/masonry/masonry.js' %}"></script>
+<script src="{% static 'assets/vendors/masonry/filter.js' %}"></script>
+<script src="{% static 'assets/vendors/owl-carousel/owl.carousel.js' %}"></script>
+<script src="{% static 'assets/js/jquery.scroller.js' %}"></script>
+<script src="{% static 'assets/js/functions.js' %}"></script>
+<script src="{% static 'assets/js/contact.js' %}"></script>
+<script src="{% static 'assets/js/includeHTML.js' %}"></script>
+</body>
+<script>includeHTML();
+</script>
+
+
+<!-- Mirrored from www.scaledagiletrainings.com/courses.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Mar 2020 18:55:05 GMT -->
+</html>
